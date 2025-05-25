@@ -1,1 +1,5 @@
-toml\nproviders = [\"node\"]\n\n[start]\ncmd = \"node loader.js --no-daemon --port $PORT\"\n
+# nixpacks.toml  -- in repo root
+providers = ["node"]
+
+[start]
+cmd = "node loader.js --no-daemon --port $PORT"
