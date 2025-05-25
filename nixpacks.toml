@@ -1,13 +1,12 @@
-# nixpacks.toml  – place in repo root (same level as package.json)
+# nixpacks.toml  (repo root)
 
-# --- provider ----------------------------------------------------------------
-providers = ["node"]          # force the Node provider
+providers = ["node"]
 
 # --- install phase -----------------------------------------------------------
 [phases.install]
 cmds = [
-  # install prod dependencies exactly as lockfile specifies
-  "npm ci --omit=dev"
+  # standard install, prod-only deps
+  "npm install --omit=dev --unsafe-perm"
 ]
 
 # --- start phase -------------------------------------------------------------
