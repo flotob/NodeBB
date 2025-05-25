@@ -13,7 +13,7 @@ NodeBB by itself contains a "common core" of basic functionality, while addition
 
 ## Screenshots
 
-NodeBB's theming engine is highly flexible and does not restrict your design choices. Check out some themed installs in these screenshots below:
+NodeBB's theming engine is highly flexible and does not restrict your design choices. Check out some themed installs in these screenshots beloww:
 
 [![](http://i.imgur.com/VCoOFyqb.png)](http://i.imgur.com/VCoOFyq.png)
 [![](http://i.imgur.com/FLOUuIqb.png)](http://i.imgur.com/FLOUuIq.png)
