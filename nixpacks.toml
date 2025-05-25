@@ -1,5 +1,15 @@
-# nixpacks.toml  -- in repo root
-providers = ["node"]
+# nixpacks.toml  – place in repo root (same level as package.json)
 
+# --- provider ----------------------------------------------------------------
+providers = ["node"]          # force the Node provider
+
+# --- install phase -----------------------------------------------------------
+[phases.install]
+cmds = [
+  # install prod dependencies exactly as lockfile specifies
+  "npm ci --omit=dev"
+]
+
+# --- start phase -------------------------------------------------------------
 [start]
 cmd = "node loader.js --no-daemon --port $PORT"
